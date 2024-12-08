@@ -4,7 +4,6 @@ import React, { useState, useRef } from 'react'
 import { Map as ReactMap, Source, Layer, type MapRef } from 'react-map-gl';
 import mapboxgl, { type GeoJSONFeature } from 'mapbox-gl';
 import type { LayerProps } from 'react-map-gl';
-import 'maplibre-gl/dist/maplibre-gl.css';
 import { getAllOrganizations } from '@/utils/organizations';
 import { useQuery } from '@tanstack/react-query';
 import Card from '@/components/Card';

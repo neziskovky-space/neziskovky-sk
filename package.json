@@ -12,7 +12,6 @@
     "@supabase/ssr": "^0.5.2",
     "@tanstack/react-query": "^5.62.3",
     "mapbox-gl": "^3.8.0",
-    "maplibre-gl": "^4.7.1",
     "next": "15.0.4",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
