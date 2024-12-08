@@ -34,11 +34,13 @@ export default function MapPage() {
             const feature = features[0] as GeoJSONFeature & { properties: { name: string; organization: NGO } };
 
             if (feature.properties?.name && feature.properties.organization) {
+                const geometry = feature.geometry as GeoJSON.Point;
                 setPopupInfo({
-                    longitude: feature.geometry.coordinates[0],
-                    latitude: feature.geometry.coordinates[1],
+                    longitude: geometry.coordinates[0],
+                    latitude: geometry.coordinates[1],
                     name: feature.properties.name,
                     organization: feature.properties.organization as unknown as string
+
                 });
             } else {
                 setPopupInfo(null);

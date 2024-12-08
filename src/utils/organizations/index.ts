@@ -1,8 +1,9 @@
 import { createClient } from "@/utils/supabase/client";
+import type { NGO } from "../types";
 async function getAllOrganizations() {
 	const supabase = createClient();
 	const PAGE_SIZE = 1000;
-	let allOrganizations = [];
+	let allOrganizations: NGO[] = [];
 	let page = 0;
 	let hasMore = true;
 
