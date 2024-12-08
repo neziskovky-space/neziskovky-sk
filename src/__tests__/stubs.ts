@@ -1,4 +1,4 @@
-const ngoStub = [
+export const ngoStub = [
 	{
 		Name: "Univerzita Konštantína Filozofa v Nitre",
 		Latitude: 48.3084331,

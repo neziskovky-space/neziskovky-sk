@@ -6,7 +6,7 @@ interface CardProps {
     organization: string
 }
 export default function Card({ title, organization }: CardProps) {
-    const orgObject = JSON.parse(organization);
+    const orgObject = JSON.parse(organization) as NGO;
 
     return (
         <div className="relative mt-6 flex w-96 flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md">
